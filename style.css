@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #161815;
+    color: white;
+}
+
+hr{
+    border-color: white;
+}
+
+.anclaFooter{
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.anclaPr{
+    text-decoration: none;
+    color: white;
+}
