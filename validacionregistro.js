@@ -7,6 +7,7 @@ $(document).ready(function(){
         var telefono = $("#telefono").val();
         var rut = $("#rut").val();
         var contraseña = $("#contraseña").val();
+        var terminos = $("#Deacuerdo").is(":checked");
 
         if(nombre.length < 3 || nombre.length > 20){
             alert("El nombre debe tener entre 3 y 20 caracteres.");
@@ -30,6 +31,11 @@ $(document).ready(function(){
 
         if(contraseña.length < 3 || contraseña.length > 12){
             alert("La contraseña debe tener entre 3 y 12 caracteres.");
+            return;
+        }
+
+        if(!terminos){
+            alert("Debe aceptar los términos y condiciones.");
             return;
         }
 
