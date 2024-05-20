@@ -38,8 +38,3 @@ $(document).ready(function(){
     });
 });
 
-function validarEmail(email){
-
-    var validacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return validacion.test(email);
-}
