@@ -23,3 +23,8 @@ html{
     text-decoration: none;
     color: white;
 }
+
+.rounded-box{
+    max-width: 600px;
+    padding: 40px;
+}
