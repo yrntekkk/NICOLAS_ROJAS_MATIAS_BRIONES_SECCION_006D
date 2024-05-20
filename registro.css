@@ -64,10 +64,19 @@ body{
 .form-registro .boton{
     width: 100%;
     background: #dc3545;
-    border: none;
+    border-radius: 5px;
+    border-color: white;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
 
+.form-registro .boton:hover{
+    background: #343a40;
+}
+
+.form-registro label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
