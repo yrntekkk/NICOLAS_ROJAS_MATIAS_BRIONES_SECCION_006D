@@ -40,6 +40,7 @@ $(document).ready(function(){
         }
 
         alert("Registro Exitoso!");
+        window.location.href = "login.html";
 
     });
 });
