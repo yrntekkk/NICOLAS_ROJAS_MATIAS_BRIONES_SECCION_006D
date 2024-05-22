@@ -29,32 +29,20 @@ html {
     padding: 40px;
 }
 
-@keyframes separador {
-    0% {
-        content: "";
-    }
-    10% {
-        content: ".";
-    }
-    20% {
-        content: "..";
-    }
-    30% {
-        content: "...";
-    }
-    40% {
-        content: "..";
-    }
-    50% {
-        content: ".";
-    }
-    60% {
-        content: "";
-    }
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: black;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
 }
 
-#puntos::after {
-    content: "";
-    display: inline-block;
-    animation: separador 4s infinite;
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
 }
