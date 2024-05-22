@@ -1,8 +1,8 @@
 //Funcion para mostrar el Toast cada 10 segundos
 function mostrarNotificacion() {
-    var toast = document.getElementById('liveToast');
-    var bsToast = new bootstrap.Toast(toast);
-    bsToast.show();
+    var toast = document.getElementById('liveToast'); //Con esto obtenemos el elemento con el id liveToast
+    var bsToast = new bootstrap.Toast(toast);//Creamos un objeto de tipo bsToast
+    bsToast.show(); //Lo mostramos
 }
 //Intervalo entre notificaciones 
 setInterval(mostrarNotificacion, 10000);
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function(){
         if (indice < texto.length){
             //Si es que aun faltan caracteres agrega el siguiente a la variable contenido
             contenido += texto.charAt(indice);
-            //Cursor que da el efecto como si alguien estuviese escribiendo
-            enlace.innerHTML = contenido + '<span class="cursor"></span>';
+            //Cursor que da el efecto como si alguien estuviese escribiendo la palabra :)
+            enlace.innerHTML = contenido + '<span class="cursor text-light"></span>';
             indice++; //Se usa para pasar al siguiente caracter
             setTimeout(animarTexto, velocidad); 
         }
