@@ -12,6 +12,8 @@ $(document).ready(function(){
             return;
         }
 
+        sessionStorage.setItem('autentificado',true);
+
 
         alert("Inicio de sesion Exitoso!");
         window.location.href = "index.html";

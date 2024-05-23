@@ -35,3 +35,21 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     animarTexto();
 });
+
+//Funciones para cerrar he iniciar sesion
+
+$(document).ready(function(){
+    if(sessionStorage.getItem('autentificado')){ //con esto obtendremos el valor que esta almacenado en autenticado
+        $('#botoniniciar').hide();               //Si esta autentificado oculta el boton de iniciar sesion y muestra el de cerrar sesion
+        $('#botoncerrar').show();
+    }
+    else{                                        //si esque no esta autentificado el boton de iniciar sesion se mantiene visible y el de cerrar sesion se queda oculto
+        $('#botoniniciar').show();
+        $('#botoncerrar').hide();
+    }
+});
+
+function cerrarsesion(){                         //Funcion para cerrar sesion
+    sessionStorage.removeItem('autentificado');  //Con esto borramos lo que estaba guardado en autentificado es decir el usuario ya no estaria autentificado   
+    window.location.href='index.html';           //Con esto mandamos al usuario a la pagina principal despues de cerrar la sesion
+}
